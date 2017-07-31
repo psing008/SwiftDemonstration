@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedDetailViewController" customModule="PhunWareAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="gPZ-fv-tgN" id="Rgb-n7-iW6"/>
+                <outlet property="dateLabel" destination="eTS-D1-slk" id="g1J-9i-SUL"/>
+                <outlet property="descriptionLabel" destination="0g5-TI-C8p" id="psh-F1-CBZ"/>
+                <outlet property="feedScrollView" destination="4fn-OV-ZM0" id="6dG-U3-vH7"/>
+                <outlet property="imageView" destination="Z9d-fO-U4O" id="cUN-mH-uOC"/>
+                <outlet property="titleLabel" destination="YWt-xH-YjZ" id="XGX-ut-s5y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fn-OV-ZM0">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPZ-fv-tgN" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWt-xH-YjZ">
+                                    <rect key="frame" x="20" y="261" width="728" height="23"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-TI-C8p">
+                                    <rect key="frame" x="20" y="292" width="728" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Z9d-fO-U4O">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="230"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTS-D1-slk">
+                                    <rect key="frame" x="20" y="238" width="728" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="0g5-TI-C8p" firstAttribute="leading" secondItem="gPZ-fv-tgN" secondAttribute="leading" constant="20" id="0qa-N7-qOj">
+                                    <variation key="widthClass=regular" constant="84"/>
+                                </constraint>
+                                <constraint firstItem="YWt-xH-YjZ" firstAttribute="top" secondItem="eTS-D1-slk" secondAttribute="bottom" constant="6.5" id="0v5-j5-Mtf"/>
+                                <constraint firstItem="eTS-D1-slk" firstAttribute="top" secondItem="gPZ-fv-tgN" secondAttribute="top" constant="238" id="3d7-3c-hZW"/>
+                                <constraint firstAttribute="trailing" secondItem="eTS-D1-slk" secondAttribute="trailing" constant="20" id="5eH-hc-JJW">
+                                    <variation key="widthClass=regular" constant="84"/>
+                                </constraint>
+                                <constraint firstItem="eTS-D1-slk" firstAttribute="top" secondItem="Z9d-fO-U4O" secondAttribute="bottom" constant="8" id="AsW-6E-Ss6"/>
+                                <constraint firstItem="Z9d-fO-U4O" firstAttribute="top" secondItem="gPZ-fv-tgN" secondAttribute="top" id="Bl0-qo-iU9"/>
+                                <constraint firstAttribute="trailing" secondItem="YWt-xH-YjZ" secondAttribute="trailing" priority="751" constant="20" id="Fvu-gB-SAE">
+                                    <variation key="widthClass=regular" constant="84"/>
+                                </constraint>
+                                <constraint firstItem="Z9d-fO-U4O" firstAttribute="leading" secondItem="gPZ-fv-tgN" secondAttribute="leading" id="PH3-Xv-Gcw"/>
+                                <constraint firstItem="eTS-D1-slk" firstAttribute="leading" secondItem="gPZ-fv-tgN" secondAttribute="leading" constant="20" id="bAd-ct-gTl">
+                                    <variation key="widthClass=regular" constant="84"/>
+                                </constraint>
+                                <constraint firstItem="0g5-TI-C8p" firstAttribute="top" secondItem="YWt-xH-YjZ" secondAttribute="bottom" constant="7.5" id="glJ-nU-orI"/>
+                                <constraint firstItem="YWt-xH-YjZ" firstAttribute="leading" secondItem="gPZ-fv-tgN" secondAttribute="leading" constant="20" id="ilx-4F-BX7">
+                                    <variation key="widthClass=regular" constant="84"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="0g5-TI-C8p" secondAttribute="trailing" priority="751" constant="20" id="qJl-BZ-3ab">
+                                    <variation key="widthClass=regular" constant="84"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="Z9d-fO-U4O" secondAttribute="trailing" id="sAy-bd-CD7"/>
+                            </constraints>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <mask key="constraints">
+                                    <include reference="3d7-3c-hZW"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gPZ-fv-tgN" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="H9f-Dr-W7w"/>
+                <constraint firstItem="gPZ-fv-tgN" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="R63-em-dS7"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <include reference="R63-em-dS7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-1566" y="-901"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="360" height="213"/>
+    </resources>
+</document>

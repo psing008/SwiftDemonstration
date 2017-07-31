@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vAw-mm-PNR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PHUN APP-->
+        <scene sceneID="9Kj-Pn-7vX">
+            <objects>
+                <viewController title="PHUN APP" automaticallyAdjustsScrollViewInsets="NO" id="M2s-Qo-yqq" customClass="FeedCollectionView" customModule="PhunWareAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2fd-2k-01k"/>
+                        <viewControllerLayoutGuide type="bottom" id="79k-Dg-AAW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wal-5u-DCD">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Az-QI-DqQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="I63-l5-nb9"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="M2s-Qo-yqq" id="hkk-GK-AOk"/>
+                                    <outlet property="delegate" destination="M2s-Qo-yqq" id="SKN-aZ-pFd"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9Az-QI-DqQ" secondAttribute="trailing" id="HAm-5v-1Lk"/>
+                            <constraint firstItem="9Az-QI-DqQ" firstAttribute="top" secondItem="2fd-2k-01k" secondAttribute="bottom" id="UDe-0R-m0j"/>
+                            <constraint firstItem="9Az-QI-DqQ" firstAttribute="leading" secondItem="Wal-5u-DCD" secondAttribute="leading" id="bjh-fW-g1Q"/>
+                            <constraint firstItem="79k-Dg-AAW" firstAttribute="top" secondItem="9Az-QI-DqQ" secondAttribute="bottom" id="nK1-8f-JGI"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="PHUN APP" id="dek-SI-ngV"/>
+                    <connections>
+                        <outlet property="collectionView" destination="9Az-QI-DqQ" id="ITl-SF-VDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xh-Oi-S7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-736"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S2H-bb-iUM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vAw-mm-PNR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xyf-Qq-15D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M2s-Qo-yqq" kind="relationship" relationship="rootViewController" id="9Nk-nv-evw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hmx-EW-VQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="-803"/>
+        </scene>
+    </scenes>
+</document>
